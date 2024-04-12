@@ -1,0 +1,260 @@
+@import url('./confetti.css');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+}
+
+.game-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 251px; 
+    height: 58px;
+
+}
+
+.next-page a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.game-section {
+    padding-top: 50px;
+}
+
+.game-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-menu__title {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.game-menu__difficult-btn,
+.restart-btn {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #000000;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.game-menu__difficult-btn:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.game-menu__difficult-btn,
+.restart-btn {
+    padding: 15px 20px;
+    background-color: #00aaff;
+}
+
+.game-menu__difficult-btn:hover {
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    background-color: #000000;
+    color: #fff;
+}
+
+.game-table {
+    max-width: 500px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-card {
+    width: 50px;
+    height: 100px;
+    flex: 0 0 23%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 0, 0);
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    margin: 1%;
+}
+
+.game-card span {
+    font-size: 40px;
+    display: none;
+}
+
+.game-card span+span {
+    display: block;
+}
+
+.game-card.flip {
+    background: #ffffff !important;
+    transform: perspective(100px) rotateY(180deg);
+}
+
+.game-card.flip span {
+    display: block;
+}
+
+.game-card.flip span+span {
+    display: none;
+}
+
+.game-card.successfully {
+    background: #0080ff !important;
+}
+
+.game-card:hover {
+    background: #d1d1c0;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    float: left;
+    margin-top: 259px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+
+.left-link {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+}
+
+.right-email {
+    flex: 1;
+    text-align: right;
+    color: #ffffff;
+}
+
+.shoya {
+    display: block;
+    background-image: url('../img/shoya.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.hinata {
+    display: block;
+    background-image: url('../img/hinata.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.ikari {
+    display: block;
+    background-image: url('../img/ikari.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.luffy {
+    display: block;
+    background-image: url('../img/luffy.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.naruto {
+    display: block;
+    background-image: url('../img/naruto.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.midoriya {
+    display: block;
+    background-image: url('../img/midoriya.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.reki {
+    display: block;
+    background-image: url('../img/reki.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.yato {
+    display: block;
+    background-image: url('../img/yato.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.default-img {
+    display: block;
+    background-image: url('../img/default-image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;   
+}
